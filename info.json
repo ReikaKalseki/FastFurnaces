@@ -1,0 +1,10 @@
+{
+  "name": "FastFurnaces",
+  "version": "0.0.1",
+  "title": "Fast Furnaces",
+  "author": "Reika",
+  "contact": "",
+  "homepage": "",
+  "description": "Adds faster electric furnaces.",
+  "dependencies": ["base >= 0.12.0"]
+}
