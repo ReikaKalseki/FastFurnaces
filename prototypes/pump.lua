@@ -173,6 +173,13 @@ data:extend(
         }
       }
     },
+	circuit_connector_sprites =
+    {
+      get_circuit_connector_sprites({0.90625, -0.15625}, nil, 0),
+      get_circuit_connector_sprites({0, 0.03125}, nil, 6),
+      get_circuit_connector_sprites({-0.9375, -0.25}, nil, 4),
+      get_circuit_connector_sprites({0.125, -1.3125}, nil, 2),
+    },
     circuit_wire_max_distance = 12.5
 
   },
@@ -294,6 +301,13 @@ data:extend(
           green = {-0.34375, -0.73125},
         }
       }
+    },
+	circuit_connector_sprites =
+    {
+      get_circuit_connector_sprites({0.90625, -0.15625}, nil, 0),
+      get_circuit_connector_sprites({0, 0.03125}, nil, 6),
+      get_circuit_connector_sprites({-0.9375, -0.25}, nil, 4),
+      get_circuit_connector_sprites({0.125, -1.3125}, nil, 2),
     },
     circuit_wire_max_distance = 12.5
 

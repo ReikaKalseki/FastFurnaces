@@ -6,7 +6,7 @@ data:extend(
     icon = "__FastFurnaces__/graphics/icons/basic-mining-drill.png",
     flags = {"goes-to-quickbar"},
     subgroup = "production-machine",
-    order = "f[basic-mining-drill]-f[fast-drill-1-2]",
+    order = "f[electric-mining-drill]-f[fast-drill-1-2]",
     place_result = "fast-drill",
     stack_size = 50
   },
@@ -18,7 +18,7 @@ data:extend(
 	energy_required = 20,
     ingredients =
     {
-      {"basic-mining-drill", 1},
+      {"electric-mining-drill", 1},
       {"steel-plate", 25},
       {"effectivity-module-5", 1},
       {"advanced-circuit", 10},

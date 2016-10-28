@@ -28,7 +28,7 @@ data:extend(
 	energy_required = 60,
     ingredients =
     {
-      {"basic-beacon", 1},
+      {"beacon", 1},
     },
     result = "fast-beacon"
   },

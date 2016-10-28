@@ -1,5 +1,6 @@
 data:extend(
 {
+--[[
   {
     type = "item",
     name = "big-smart-chest",
@@ -9,7 +10,7 @@ data:extend(
     order = "a[items]-d[big-smart-chest]",
     place_result = "big-smart-chest",
     stack_size = 50
-  },
+  },--]]
     {
     type = "item",
     name = "big-storage-chest",
@@ -30,7 +31,7 @@ data:extend(
     place_result = "big-passive-provider-chest",
     stack_size = 50
   },
-
+--[[
   {
     type = "recipe",
     name = "big-smart-chest",
@@ -44,7 +45,7 @@ data:extend(
       {"iron-gear-wheel", 5},
     },
     result = "big-smart-chest"
-  },
+  },--]]
     {
     type = "recipe",
     name = "big-storage-chest",
@@ -73,7 +74,7 @@ data:extend(
     },
     result = "big-passive-provider-chest"
   },
-
+--[[
   {
     type = "smart-container",
     name = "big-smart-chest",
@@ -123,7 +124,7 @@ data:extend(
       }
     },
     circuit_wire_max_distance = 12.5
-  },
+  },--]]
     {
     type = "logistic-container",
     name = "big-passive-provider-chest",
@@ -189,11 +190,11 @@ data:extend(
     name = "large-storage",
     icon = "__FastFurnaces__/graphics/technology/storage.png",
     effects =
-    {
+    {--[[
       {
         type = "unlock-recipe",
         recipe = "big-smart-chest"
-      },
+      },--]]
       {
         type = "unlock-recipe",
         recipe = "big-storage-chest"
