@@ -20,7 +20,6 @@ data:extend(
     {
       {"electric-mining-drill", 1},
       {"steel-plate", 25},
-      {"effectivity-module-5", 1},
       {"advanced-circuit", 10},
     },
     result = "fast-drill"
@@ -154,12 +153,13 @@ data:extend(
         {"science-pack-1", 4},
         {"science-pack-2", 2},
         {"science-pack-3", 1},
+        {"production-science-pack", 1}
       },
       time = 60
     },
     upgrade = true,
     order = "a-f",
-	icon_size = 128,
+	icon_size = 32,
   },
 }
 )

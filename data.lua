@@ -37,6 +37,6 @@ if Config.bigChest then
 	require("prototypes.chest")
 end
 
-if Config.extendBobPower then
+if Config.extendBobPower and data.raw.generator["steam-engine-3"] and data.raw.generator["solar-panel-3"] then
 	require("prototypes.power")
 end

@@ -6,7 +6,7 @@ data:extend(
     icon = "__FastFurnaces__/graphics/icons/small-pump.png",
     flags = {"goes-to-quickbar"},
     subgroup = "energy-pipe-distribution",
-    order = "f[small-pump]-f[fast--pump-1-2]",
+    order = "f[pump]-f[fast--pump-1-2]",
     place_result = "fast--pump",
     stack_size = 50
   },
@@ -28,7 +28,7 @@ data:extend(
 	energy_required = 60,
     ingredients =
     {
-      {"small-pump", 1},
+      {"pump", 1},
     },
     result = "fast--pump"
   },

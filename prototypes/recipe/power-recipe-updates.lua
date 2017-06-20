@@ -1,9 +1,9 @@
-if data.raw.item["electronic-processing-board-2"] then
-  table.insert(data.raw["recipe"]["solar-panel-4"].ingredients,{"electronic-processing-board-2", 10})
-  table.insert(data.raw["recipe"]["solar-panel-5"].ingredients,{"electronic-processing-board-2", 20})
+if data.raw.item["advanced-processing-unit"] then
+  table.insert(data.raw["recipe"]["solar-panel-4"].ingredients,{"advanced-processing-unit", 10})
+  table.insert(data.raw["recipe"]["solar-panel-5"].ingredients,{"advanced-processing-unit", 20})
   
-  table.insert(data.raw["recipe"]["steam-engine-4"].ingredients,{"electronic-logic-board", 5})
-  table.insert(data.raw["recipe"]["steam-engine-5"].ingredients,{"electronic-logic-board", 10})
+  table.insert(data.raw["recipe"]["steam-engine-4"].ingredients,{"processing-unit", 8})
+  table.insert(data.raw["recipe"]["steam-engine-5"].ingredients,{"advanced-processing-unit", 8})
 else
   table.insert(data.raw["recipe"]["solar-panel-4"].ingredients,{"processing-unit", 10})
   table.insert(data.raw["recipe"]["solar-panel-4"].ingredients,{"advanced-circuit", 20})
@@ -39,22 +39,14 @@ if data.raw.item["nitinol-bearing"] then
   table.insert(data.raw["recipe"]["steam-engine-5"].ingredients,{"nitinol-bearing", 10})
 end
 
-if data.raw.item["silver-plate"] then
-  table.insert(data.raw["recipe"]["solar-panel-4"].ingredients,{"silver-plate", 10})
-  table.insert(data.raw["recipe"]["solar-panel-5"].ingredients,{"silver-plate", 20})
-else
-  table.insert(data.raw["recipe"]["solar-panel-4"].ingredients,{"copper-plate", 15})
-  table.insert(data.raw["recipe"]["solar-panel-5"].ingredients,{"copper-plate", 30})
-end
-
-if data.raw.item["gold-plate"] then
-  table.insert(data.raw["recipe"]["solar-panel-4"].ingredients,{"gold-plate", 2})
-  table.insert(data.raw["recipe"]["solar-panel-5"].ingredients,{"gold-plate", 4})
+if data.raw.item["electrum-plate"] then
+  table.insert(data.raw["recipe"]["solar-panel-4"].ingredients,{"electrum", 8})
+  table.insert(data.raw["recipe"]["solar-panel-5"].ingredients,{"electrum", 16})
 end
 
 if data.raw.item["silicon-wafer"] then
-  table.insert(data.raw["recipe"]["solar-panel-4"].ingredients,{"silicon-wafer", 20})
-  table.insert(data.raw["recipe"]["solar-panel-5"].ingredients,{"silicon-wafer", 30})
+  table.insert(data.raw["recipe"]["solar-panel-4"].ingredients,{"silicon-wafer", 48})
+  table.insert(data.raw["recipe"]["solar-panel-5"].ingredients,{"silicon-wafer", 60})
 end
 
 

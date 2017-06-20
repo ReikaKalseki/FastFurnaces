@@ -8,6 +8,8 @@ data:extend(
     flags = {"goes-to-main-inventory"},
     subgroup = "module",
     order = "a[speed]-c[speed-module-4]",
+    category = "speed",
+    tier = 4,
     stack_size = 50,
     default_request_amount = 10,
     effect = { speed = {bonus = 0.8}, consumption = {bonus = 1.5}}
@@ -18,7 +20,9 @@ data:extend(
     icon = "__FastFurnaces__/graphics/icons/effectivity-module-4.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "module",
+    category = "effectivity",
     order = "c[effectivity]-c[effectivity-module-4]",
+    tier = 4,
     stack_size = 50,
     default_request_amount = 10,
     effect = { consumption = {bonus = -0.6}}
@@ -29,7 +33,9 @@ data:extend(
     icon = "__FastFurnaces__/graphics/icons/productivity-module-4.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "module",
+    category = "productivity",
     order = "c[productivity]-c[productivity-module-4]",
+    tier = 4,
     stack_size = 50,
     default_request_amount = 10,
     effect = { productivity = {bonus = 0.25}, consumption = {bonus = 1.2}, pollution = {bonus = 0.8}, speed = {bonus = -0.05}},
@@ -43,7 +49,9 @@ data:extend(
     icon = "__FastFurnaces__/graphics/icons/speed-module-5.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "module",
+    category = "speed",
     order = "a[speed]-c[speed-module-5]",
+    tier = 5,
     stack_size = 50,
     default_request_amount = 10,
     effect = { speed = {bonus = 1.25}, consumption = {bonus = 2}}
@@ -54,7 +62,9 @@ data:extend(
     icon = "__FastFurnaces__/graphics/icons/effectivity-module-5.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "module",
+    category = "effectivity",
     order = "c[effectivity]-c[effectivity-module-5]",
+    tier = 5,
     stack_size = 50,
     default_request_amount = 10,
     effect = { consumption = {bonus = -0.8}}
@@ -65,7 +75,9 @@ data:extend(
     icon = "__FastFurnaces__/graphics/icons/productivity-module-5.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "module",
+    category = "productivity",
     order = "c[productivity]-c[productivity-module-5]",
+    tier = 5,
     stack_size = 50,
     default_request_amount = 10,
     effect = { productivity = {bonus = 0.5}, consumption = {bonus = 1.5}, pollution = {bonus = 1}, speed = {bonus = 0}},
@@ -98,7 +110,7 @@ data:extend(
         {"science-pack-1", 4},
         {"science-pack-2", 2},
         {"science-pack-3", 1},
-        {"alien-science-pack", 1}
+        {"high-tech-science-pack", 1}
       },
       time = 90
     },
@@ -125,7 +137,8 @@ data:extend(
         {"science-pack-1", 4},
         {"science-pack-2", 2},
         {"science-pack-3", 1},
-        {"alien-science-pack", 1}
+        {"high-tech-science-pack", 1},
+        {"production-science-pack", 1}
       },
       time = 90
     },
@@ -152,7 +165,8 @@ data:extend(
         {"science-pack-1", 4},
         {"science-pack-2", 2},
         {"science-pack-3", 1},
-        {"alien-science-pack", 1}
+        {"high-tech-science-pack", 1},
+        {"production-science-pack", 1}
       },
       time = 90
     },
@@ -180,7 +194,7 @@ data:extend(
         {"science-pack-1", 4},
         {"science-pack-2", 2},
         {"science-pack-3", 1},
-        {"alien-science-pack", 1}
+        {"high-tech-science-pack", 1}
       },
       time = 120
     },
@@ -207,7 +221,7 @@ data:extend(
         {"science-pack-1", 4},
         {"science-pack-2", 2},
         {"science-pack-3", 1},
-        {"alien-science-pack", 1}
+        {"high-tech-science-pack", 1}
       },
       time = 120
     },
@@ -234,7 +248,7 @@ data:extend(
         {"science-pack-1", 4},
         {"science-pack-2", 2},
         {"science-pack-3", 1},
-        {"alien-science-pack", 1}
+        {"high-tech-science-pack", 1}
       },
       time = 120
     },

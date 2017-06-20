@@ -153,6 +153,7 @@ data:extend(
         {"science-pack-1", 4},
         {"science-pack-2", 2},
         {"science-pack-3", 1},
+        {"production-science-pack", 1}
       },
       time = 60
     },

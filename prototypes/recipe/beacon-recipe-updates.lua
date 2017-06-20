@@ -1,6 +1,6 @@
-if data.raw.item["electronic-processing-board-2"] then
-  table.insert(data.raw["recipe"]["fast-beacon"].ingredients,{"electronic-processing-board-2", 2})
-  table.insert(data.raw["recipe"]["fast-beacon-2"].ingredients,{"electronic-processing-board-2", 20})
+if data.raw.item["advanced-processing-unit"] then
+  table.insert(data.raw["recipe"]["fast-beacon"].ingredients,{"advanced-processing-unit", 2})
+  table.insert(data.raw["recipe"]["fast-beacon-2"].ingredients,{"advanced-processing-unit", 20})
 else
   table.insert(data.raw["recipe"]["fast-beacon"].ingredients,{"processing-unit", 10})
   table.insert(data.raw["recipe"]["fast-beacon"].ingredients,{"advanced-circuit", 20})

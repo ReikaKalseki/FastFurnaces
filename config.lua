@@ -1,13 +1,13 @@
 Config = {}
 
---This enables or disables the late-tier solars and steam engines to extend bobpower. Disable it if you do not have that mod or you WILL crash.
+--This enables or disables the late-tier solars and steam engines to extend bobpower. Does nothing without that mod installed.
 Config.extendBobPower = true
 
 --This makes the Tier-5 productivity modules have no restrictions on their use.
 Config.freeUseModules = true
 
 --Should the upper-tier modules be enabled?
-Config.modules = false
+Config.modules = true
 
 --Should the fast refineries be enabled?
 Config.fastRefinery = false

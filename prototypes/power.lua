@@ -5,7 +5,7 @@ data:extend(
     name = "solar-panel-4",
     icon = "__base__/graphics/icons/solar-panel.png",
     flags = {"goes-to-quickbar"},
-    subgroup = "bob-energy-solar-panel",
+    --subgroup = "bob-energy-solar-panel",
     order = "d[solar-panel]-a[solar-panel-4-b]",
     place_result = "solar-panel-4",
     stack_size = 50
@@ -15,7 +15,7 @@ data:extend(
     name = "solar-panel-5",
     icon = "__base__/graphics/icons/solar-panel.png",
     flags = {"goes-to-quickbar"},
-    subgroup = "bob-energy-solar-panel",
+    --subgroup = "bob-energy-solar-panel",
     order = "d[solar-panel]-a[solar-panel-5-b]",
     place_result = "solar-panel-5",
     stack_size = 50
@@ -30,7 +30,7 @@ data:extend(
     name = "steam-engine-4",
     icon = "__base__/graphics/icons/steam-engine.png",
     flags = {"goes-to-quickbar"},
-    subgroup = "bob-energy-steam-engine",
+    --subgroup = "bob-energy-steam-engine",
     order = "b[steam-power]-b[steam-engine]-4",
     place_result = "steam-engine-4",
     stack_size = 10,
@@ -40,7 +40,7 @@ data:extend(
     name = "steam-engine-5",
     icon = "__base__/graphics/icons/steam-engine.png",
     flags = {"goes-to-quickbar"},
-    subgroup = "bob-energy-steam-engine",
+    --subgroup = "bob-energy-steam-engine",
     order = "b[steam-power]-b[steam-engine]-5",
     place_result = "steam-engine-5",
     stack_size = 10,
@@ -168,6 +168,7 @@ data:extend(
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "steam-engine-4"},
     max_health = 750,
+    maximum_temperature = 165,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
     effectivity = 7.5,
@@ -190,6 +191,12 @@ data:extend(
         { position = {0, 3} },
         { position = {0, -3} },
       },
+    },
+    fluid_input =
+    {
+      name = "steam",
+      amount = 0.0,
+      minimum_temperature = 100.0
     },
     energy_source =
     {
@@ -245,6 +252,7 @@ data:extend(
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "steam-engine-5"},
     max_health = 750,
+    maximum_temperature = 165,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
     effectivity = 12.5,
@@ -267,6 +275,12 @@ data:extend(
         { position = {0, 3} },
         { position = {0, -3} },
       },
+    },
+    fluid_input =
+    {
+      name = "steam",
+      amount = 0.0,
+      minimum_temperature = 100.0
     },
     energy_source =
     {
@@ -340,7 +354,7 @@ data:extend(
         {"science-pack-1", 1},
         {"science-pack-2", 1},
         {"science-pack-3", 1},
-        {"alien-science-pack", 1},
+        {"high-tech-science-pack", 1},
       },
       time = 30
     },
@@ -368,7 +382,7 @@ data:extend(
         {"science-pack-1", 1},
         {"science-pack-2", 1},
         {"science-pack-3", 1},
-        {"alien-science-pack", 1},
+        {"high-tech-science-pack", 1},
       },
       time = 30
     },
@@ -435,7 +449,7 @@ data:extend(
         {"science-pack-1", 1},
         {"science-pack-2", 1},
         {"science-pack-3", 1},
-        {"alien-science-pack", 1}
+        {"high-tech-science-pack", 1}
       },
       time = 30
     },
