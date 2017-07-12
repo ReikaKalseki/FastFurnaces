@@ -81,7 +81,7 @@ data:extend(
       emissions = 0.015 / 2.5
     },
     energy_usage = "150kW",
-    pumping_speed = 16,
+    pumping_speed = 800,
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     animations =
     {
@@ -210,7 +210,7 @@ data:extend(
         { position = {0, 1} },
       },
     },
-    pumping_speed = 8,
+    pumping_speed = 80,
     tile_width = 1,
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =

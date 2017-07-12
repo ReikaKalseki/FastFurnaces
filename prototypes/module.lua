@@ -107,9 +107,10 @@ data:extend(
       count = 400,
       ingredients =
       {
-        {"science-pack-1", 4},
-        {"science-pack-2", 2},
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
         {"science-pack-3", 1},
+        {"production-science-pack", 1},
         {"high-tech-science-pack", 1}
       },
       time = 90
@@ -134,11 +135,11 @@ data:extend(
       count = 400,
       ingredients =
       {
-        {"science-pack-1", 4},
-        {"science-pack-2", 2},
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
         {"science-pack-3", 1},
-        {"high-tech-science-pack", 1},
-        {"production-science-pack", 1}
+        {"production-science-pack", 1},
+        {"high-tech-science-pack", 1}
       },
       time = 90
     },
@@ -162,11 +163,11 @@ data:extend(
       count = 400,
       ingredients =
       {
-        {"science-pack-1", 4},
-        {"science-pack-2", 2},
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
         {"science-pack-3", 1},
-        {"high-tech-science-pack", 1},
-        {"production-science-pack", 1}
+        {"production-science-pack", 1},
+        {"high-tech-science-pack", 1}
       },
       time = 90
     },
@@ -191,9 +192,10 @@ data:extend(
       count = 600,
       ingredients =
       {
-        {"science-pack-1", 4},
-        {"science-pack-2", 2},
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
         {"science-pack-3", 1},
+        {"production-science-pack", 1},
         {"high-tech-science-pack", 1}
       },
       time = 120
@@ -218,9 +220,10 @@ data:extend(
       count = 600,
       ingredients =
       {
-        {"science-pack-1", 4},
-        {"science-pack-2", 2},
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
         {"science-pack-3", 1},
+        {"production-science-pack", 1},
         {"high-tech-science-pack", 1}
       },
       time = 120
@@ -245,9 +248,10 @@ data:extend(
       count = 600,
       ingredients =
       {
-        {"science-pack-1", 4},
-        {"science-pack-2", 2},
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
         {"science-pack-3", 1},
+        {"production-science-pack", 1},
         {"high-tech-science-pack", 1}
       },
       time = 120

@@ -105,7 +105,7 @@ data:extend(
       emissions = 0.075 / 1.5,
       usage_priority = "secondary-input"
     },
-    energy_usage = "100kW",
+    energy_usage = "80kW",
     mining_power = 4,
     resource_searching_radius = 2.49,
     vector_to_place_result = {0, -1.85},
