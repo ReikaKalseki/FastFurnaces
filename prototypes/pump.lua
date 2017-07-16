@@ -1,3 +1,5 @@
+if not Config.fastPump then return end
+
 data:extend(
 {
   {

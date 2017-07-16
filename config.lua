@@ -27,5 +27,7 @@ Config.fastDrill = settings.startup["fast-drill"].value--true
 --Should the fast pumps be enabled?
 Config.fastPump = settings.startup["fast-pump"].value--true
 
+Config.fastLongInserter = settings.startup["fast-long-inserter"].value--true
+
 --Should the big chests be enabled?
 Config.bigChest = settings.startup["bigger-chests"].value--true

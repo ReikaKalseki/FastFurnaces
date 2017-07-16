@@ -5,40 +5,24 @@ require("prototypes.category")
 require("prototypes.overrides")
 
 -----------
-if Config.fastFurnace then
-	require("prototypes.furnace")
-end
+require("prototypes.furnace")
 
-if Config.fastChemical then
-	require("prototypes.chemical")
-end
+require("prototypes.chemical")
 
-if Config.fastChemical then
-	require("prototypes.refinery")
-end
+require("prototypes.refinery")
 
-if Config.modules then
-	require("prototypes.module")
-end
+require("prototypes.module")
 
-if Config.fastDrill then
-	require("prototypes.drill")
-end
+require("prototypes.drill")
 
-if Config.fastBeacon then
-	require("prototypes.beacon")
-end
+require("prototypes.beacon")
 
-if Config.fastPump then
-	require("prototypes.pump")
-end
+require("prototypes.pump")
 
-if Config.bigChest then
-	require("prototypes.chest")
-end
+require("prototypes.chest")
 
-if Config.extendBobPower and data.raw.generator["steam-engine-3"] and data.raw.generator["solar-panel-3"] then
-	require("prototypes.power")
-end
+require("prototypes.fast-long-inserters")
+
+require("prototypes.power")
 
 --require("prototypes.fluidpush")

@@ -1,3 +1,5 @@
+if not Config.bigChest then return end
+
 data:extend(
 {
 --[[

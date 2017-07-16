@@ -1,3 +1,5 @@
+if not Config.fastFurnace then return end
+
 data:extend(
 {
   {

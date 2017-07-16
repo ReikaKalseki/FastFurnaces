@@ -82,6 +82,15 @@ data:extend({
         },
         {
             type = "bool-setting",
+            name = "fast-long-inserter",
+            setting_type = "startup",
+            default_value = true,
+            order = "r",
+			localised_name = "Enable Fast Long Inserter",
+			localised_description = "Should the fast long inserters (blue/red mix) be enabled?",
+        },
+        {
+            type = "bool-setting",
             name = "bigger-chests",
             setting_type = "startup",
             default_value = true,

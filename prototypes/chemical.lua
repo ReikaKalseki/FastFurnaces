@@ -1,3 +1,5 @@
+if not Config.fastChemical then return end
+
 data:extend(
 {
   {

@@ -1,3 +1,5 @@
+if not (Config.extendBobPower and data.raw.generator["steam-engine-3"] and data.raw.generator["solar-panel-3"]) then return end
+
 data:extend(
 {
    {

@@ -1,11 +1,11 @@
 {
   "name": "FastFurnaces",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Fast Furnaces",
   "author": "Reika",
   "contact": "",
   "homepage": "",
   "factorio_version" : "0.15",
-  "description": "Adds faster electric furnaces.",
-  "dependencies": ["base >= 0.12.0"]
+  "description": "Adds faster electric furnaces and other production machines, and some other production enhancers like better drills, pumps and modules.",
+  "dependencies": ["base >= 0.15.0"]
 }

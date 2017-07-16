@@ -1,3 +1,5 @@
+if not Config.fastDrill then return end
+
 data:extend(
 {
   {

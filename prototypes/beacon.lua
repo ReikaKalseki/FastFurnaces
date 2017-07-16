@@ -1,3 +1,5 @@
+if not Config.fastBeacon then return end
+
 data:extend(
 {
   {

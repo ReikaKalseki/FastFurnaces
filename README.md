@@ -12,5 +12,6 @@ Adds optional larger logistic chests
 Adds optional Tier 2 and Tier 3 beacons with larger areas, more slots, and better efficiency
 Adds optional extensions to BobPower steam and solar
 Adds option to allow Tier 5 productivity to be used on any recipe, and in Tier 3 beacons
+Adds optional fast long inserters
 
 Secondary Features:
