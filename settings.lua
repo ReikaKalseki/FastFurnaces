@@ -12,7 +12,7 @@ data:extend({
             type = "bool-setting",
             name = "free-use-modules",
             setting_type = "startup",
-            default_value = true,
+            default_value = false,
             order = "r",
 			localised_name = "Unrestricted productivity modules",
 			localised_description = "This makes the Tier-5 productivity modules have no restrictions on their use.",
