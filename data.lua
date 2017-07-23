@@ -12,6 +12,7 @@ require("prototypes.chemical")
 require("prototypes.refinery")
 
 require("prototypes.module")
+require("prototypes.recipe.module-recipes")
 
 require("prototypes.drill")
 

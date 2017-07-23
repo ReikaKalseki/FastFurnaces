@@ -24,10 +24,6 @@ if Config.fastDrill then
 	require("prototypes.recipe.drill-recipe-updates")
 end
 
-if Config.modules then
-	require("prototypes.recipe.module-recipes")
-end
-
 if Config.extendBobPower and data.raw.generator["steam-engine-3"] and data.raw.generator["solar-panel-3"] then
 	require("prototypes.recipe.power-recipe-updates")
 end

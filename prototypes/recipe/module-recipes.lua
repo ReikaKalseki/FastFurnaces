@@ -1,3 +1,5 @@
+if not Config.modules then return end
+
 data:extend(
 {
   {
