@@ -1,5 +1,22 @@
 if not Config.fastDrill then return end
 
+local drill = table.deepcopy(data.raw["mining-drill"]["electric-mining-drill"])
+drill.name = "fast-drill"
+drill.icon = "__FastFurnaces__/graphics/icons/basic-mining-drill.png"
+drill.minable = {mining_time = 1, result = "fast-drill"}
+drill.max_health = 500
+drill.mining_speed = 1
+drill.energy_usage = "80kW"
+drill.mining_power = 4
+drill.fast_replaceable_group = "mining-drill"
+drill.energy_source =
+    {
+      type = "electric",
+      -- will produce this much * energy pollution units per tick
+      emissions = 0.075 / 1.5,
+      usage_priority = "secondary-input"
+    },
+
 data:extend(
 {
   {
@@ -26,7 +43,7 @@ data:extend(
     },
     result = "fast-drill"
   },
-
+--[[
   {
     type = "mining-drill",
     name = "fast-drill",
@@ -122,7 +139,9 @@ data:extend(
       height = 12
     },
     fast_replaceable_group = "mining-drill"
-  },
+  },--]]
+  
+  drill,
   
   
 }
