@@ -7,6 +7,7 @@ data:extend(
     type = "module",
     name = "speed-module-4",
     icon = "__FastFurnaces__/graphics/icons/speed-module-4.png",
+	icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "module",
     order = "a[speed]-c[speed-module-4]",
@@ -20,6 +21,7 @@ data:extend(
     type = "module",
     name = "effectivity-module-4",
     icon = "__FastFurnaces__/graphics/icons/effectivity-module-4.png",
+	icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "module",
     category = "effectivity",
@@ -33,6 +35,7 @@ data:extend(
     type = "module",
     name = "productivity-module-4",
     icon = "__FastFurnaces__/graphics/icons/productivity-module-4.png",
+	icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "module",
     category = "productivity",
@@ -49,6 +52,7 @@ data:extend(
     type = "module",
     name = "speed-module-5",
     icon = "__FastFurnaces__/graphics/icons/speed-module-5.png",
+	icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "module",
     category = "speed",
@@ -62,6 +66,7 @@ data:extend(
     type = "module",
     name = "effectivity-module-5",
     icon = "__FastFurnaces__/graphics/icons/effectivity-module-5.png",
+	icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "module",
     category = "effectivity",
@@ -75,6 +80,7 @@ data:extend(
     type = "module",
     name = "productivity-module-5",
     icon = "__FastFurnaces__/graphics/icons/productivity-module-5.png",
+	icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "module",
     category = "productivity",
@@ -118,6 +124,7 @@ data:extend(
       time = 90
     },
     upgrade = true,
+    icon_size = 128,
     order = "i-c-c"
   },
   {
@@ -146,6 +153,7 @@ data:extend(
       time = 90
     },
     upgrade = true,
+    icon_size = 128,
     order = "i-e-c"
   },
   {
@@ -174,6 +182,7 @@ data:extend(
       time = 90
     },
     upgrade = true,
+    icon_size = 128,
     order = "i-g-c"
   },
   
@@ -203,6 +212,7 @@ data:extend(
       time = 120
     },
     upgrade = true,
+    icon_size = 128,
     order = "i-c-c"
   },
   {
@@ -231,6 +241,7 @@ data:extend(
       time = 120
     },
     upgrade = true,
+    icon_size = 128,
     order = "i-e-c"
   },
   {
@@ -259,6 +270,7 @@ data:extend(
       time = 120
     },
     upgrade = true,
+    icon_size = 128,
     order = "i-g-c"
   }
 }

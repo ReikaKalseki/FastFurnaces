@@ -10,7 +10,7 @@ script.on_event(defines.events.on_trigger_created_entity, function(event)
 					if e.fluidbox[b] then
 						for k,v in pairs(e.fluidbox[b]) do game.print(k) end
 						local amt = e.fluidbox[b].amount
-						local fluid = e.fluidbox[b].type
+						local fluid = e.fluidbox[b].name
 						if fluids[fluid] then
 							fluids[fluid] = fluids[fluid]+amt
 						else

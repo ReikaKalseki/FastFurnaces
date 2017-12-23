@@ -6,6 +6,7 @@ data:extend(
     order = "aaa-a",
     inventory_order = "c-a",
     icon = "__FastFurnaces__/graphics/icons/furnace.png",
+	icon_size = 32,
   },
   {
     type = "item-subgroup",
@@ -24,6 +25,7 @@ data:extend(
     order = "aaa-a",
     inventory_order = "c-a",
     icon = "__FastFurnaces__/graphics/icons/chemical-plant.png",
+	icon_size = 32,
   },
   {
     type = "item-subgroup",

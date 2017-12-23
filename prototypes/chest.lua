@@ -24,6 +24,7 @@ local function createChest(name)
 			type = "item",
 			name = chest.name,
 			icon = chest.icon,
+			icon_size = chest.icon_size,
 			flags = {"goes-to-quickbar"},
 			subgroup = "logistic-network",
 			order = "a[storage]-d[" .. chest.name .. "]",

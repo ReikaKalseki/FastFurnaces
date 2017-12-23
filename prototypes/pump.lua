@@ -6,6 +6,7 @@ data:extend(
     type = "item",
     name = "fast--pump",
     icon = "__FastFurnaces__/graphics/icons/small-pump.png",
+	icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "energy-pipe-distribution",
     order = "f[pump]-f[fast--pump-1-2]",
@@ -16,6 +17,7 @@ data:extend(
     type = "item",
     name = "big-offshore-pump",
     icon = "__FastFurnaces__/graphics/icons/offshore-pump.png",
+	icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "extraction-machine",
     order = "b[fluids]-a[big-offshore-pump]",
@@ -52,6 +54,7 @@ data:extend(
     type = "pump",
     name = "fast--pump",
     icon = "__FastFurnaces__/graphics/icons/small-pump.png",
+	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "fast--pump"},
     max_health = 250,
@@ -124,64 +127,8 @@ data:extend(
         animation_speed = 0.5
       }
     },
-    circuit_wire_connection_points =
-    {
-      {
-        shadow =
-        {
-          red = {0.65625, 0.03125},
-          green = {0.65625, 0.03125},
-        },
-        wire =
-        {
-          red = {0.34375, -0.375},
-          green = {0.34375, -0.375},
-        }
-      },
-      {
-        shadow =
-        {
-          red = {0.625, 0.46875},
-          green = {0.625, 0.46875},
-        },
-        wire =
-        {
-          red = {0.1875, -0.03125},
-          green = {0.1875, -0.03125},
-        }
-      },
-      {
-        shadow =
-        {
-          red = {0.1875, 0.1875},
-          green = {0.1875, 0.1875},
-        },
-        wire =
-        {
-          red = {-0.375, -0.15625},
-          green = {-0.375, -0.15625},
-        }
-      },
-      {
-        shadow =
-        {
-          red = {0.3125, -0.03125},
-          green = {0.3125, -0.03125},
-        },
-        wire =
-        {
-          red = {-0.15625, -0.5},
-          green = {-0.15625, -0.5},
-        }
-      }
-    },
-	circuit_connector_sprites =
-    {
-      get_circuit_connector_sprites({0.90625, -0.15625}, nil, 0),
-      get_circuit_connector_sprites({0, 0.03125}, nil, 6),
-      get_circuit_connector_sprites({-0.9375, -0.25}, nil, 4),
-      get_circuit_connector_sprites({0.125, -1.3125}, nil, 2),
-    },
+    circuit_wire_connection_points = circuit_connector_definitions["pump"].points,
+    circuit_connector_sprites = circuit_connector_definitions["pump"].sprites,
     circuit_wire_max_distance = 12.5
 
   },
@@ -189,6 +136,7 @@ data:extend(
     type = "offshore-pump",
     name = "big-offshore-pump",
     icon = "__FastFurnaces__/graphics/icons/offshore-pump.png",
+	icon_size = 32,
     flags = {"placeable-neutral", "player-creation", "filter-directions"},
     minable = {mining_time = 1, result = "big-offshore-pump"},
     max_health = 200,
@@ -253,64 +201,8 @@ data:extend(
         height = 102
       }
     },
-    circuit_wire_connection_points =
-    {
-      {
-        shadow =
-        {
-          red = {2.7125, 0.20625},
-          green = {2.7125, 0.20625},
-        },
-        wire =
-        {
-          red = {0.4, -0.41875},
-          green = {0.4, -0.41875},
-        }
-      },
-      {
-        shadow =
-        {
-          red = {2.025, 0.83125},
-          green = {2.025, 0.83125},
-        },
-        wire =
-        {
-          red = {0.36875, -0.1375},
-          green = {0.36875, -0.1375},
-        }
-      },
-      {
-        shadow =
-        {
-          red = {1.09, 1.025},
-          green = {1.09, 1.025},
-        },
-        wire =
-        {
-          red = {-0.50625, 0.2125},
-          green = {-0.50625, 0.2125},
-        }
-      },
-      {
-        shadow =
-        {
-          red = {1.6875, -0.10625},
-          green = {1.6875, -0.10625},
-        },
-        wire =
-        {
-          red = {-0.34375, -0.73125},
-          green = {-0.34375, -0.73125},
-        }
-      }
-    },
-	circuit_connector_sprites =
-    {
-      get_circuit_connector_sprites({0.90625, -0.15625}, nil, 0),
-      get_circuit_connector_sprites({0, 0.03125}, nil, 6),
-      get_circuit_connector_sprites({-0.9375, -0.25}, nil, 4),
-      get_circuit_connector_sprites({0.125, -1.3125}, nil, 2),
-    },
+    circuit_wire_connection_points = circuit_connector_definitions["offshore-pump"].points,
+    circuit_connector_sprites = circuit_connector_definitions["offshore-pump"].sprites,
     circuit_wire_max_distance = 12.5
 
   },

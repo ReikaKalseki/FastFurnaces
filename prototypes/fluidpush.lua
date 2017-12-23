@@ -4,6 +4,7 @@ data:extend(
     type = "capsule",
     name = "fluidpush-capsule",
     icon = "__FastFurnaces__/graphics/icons/fluidpush-capsule.png",
+	icon_size = 32,
     flags = {"goes-to-quickbar"},
     capsule_action =
     {
