@@ -1,5 +1,17 @@
 if not Config.fastBeacon then return end
 
+--[[
+local tier1 = table.deepcopy(data.raw.beacon.beacon)
+local tier2 = table.deepcopy(data.raw.beacon.beacon)
+
+tier1.name = "fast-beacon"
+tier1.icon = "__FastFurnaces__/graphics/icons/basic-beacon.png"
+tier1.icon_size = 32
+tier1.minable.result = tier1.name
+tier1.max_health = 500
+tier1.
+--]]
+
 data:extend(
 {
   {
@@ -126,7 +138,7 @@ data:extend(
     dying_explosion = "medium-explosion",
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    allowed_effects = {"consumption", "speed", "pollution", "productivity"},
+    allowed_effects = {"consumption", "speed", "pollution"},
     base_picture =
     {
       filename = "__FastFurnaces__/graphics/entity/basic-beacon-2/basic-beacon-base.png",
