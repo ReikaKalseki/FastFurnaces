@@ -140,6 +140,8 @@ data:extend(
     flags = {"placeable-neutral", "player-creation", "filter-directions"},
     minable = {mining_time = 1, result = "big-offshore-pump"},
     max_health = 200,
+    fluid_box_tile_collision_test = { "ground-tile" },
+    adjacent_tile_collision_test = { "water-tile" },
     corpse = "small-remnants",
     fluid = "water",
     resistances =
