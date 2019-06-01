@@ -19,7 +19,7 @@ data:extend(
     name = "fast-beacon",
     icon = "__FastFurnaces__/graphics/icons/basic-beacon.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "module",
     order = "f[basic-beacon]-f[fast-beacon-1-2]",
     place_result = "fast-beacon",
@@ -30,7 +30,7 @@ data:extend(
     name = "fast-beacon-2",
     icon = "__FastFurnaces__/graphics/icons/basic-beacon-2.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "module",
     order = "f[fast-beacon]-f[fast-beacon-2-1-2]",
     place_result = "fast-beacon-2",
@@ -219,10 +219,10 @@ data:extend(
       count = 100,
       ingredients =
       {
-        {"science-pack-1", 4},
-        {"science-pack-2", 2},
-        {"science-pack-3", 1},
-        {"high-tech-science-pack", 1},
+        {"automation-science-pack", 4},
+        {"logistic-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"utility-science-pack", 1},
       },
       time = 60
     },
@@ -250,10 +250,10 @@ data:extend(
       count = 800,
       ingredients =
       {
-        {"science-pack-1", 4},
-        {"science-pack-2", 4},
-        {"science-pack-3", 2},
-        {"high-tech-science-pack", 1},
+        {"automation-science-pack", 4},
+        {"logistic-science-pack", 4},
+        {"chemical-science-pack", 2},
+        {"utility-science-pack", 1},
       },
       time = 60
     },

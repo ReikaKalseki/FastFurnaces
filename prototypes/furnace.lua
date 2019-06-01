@@ -7,7 +7,7 @@ data:extend(
     name = "fast-furnace",
     icon = "__FastFurnaces__/graphics/icons/furnace.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "smelting-machine",
     order = "f[electric-furnace]-f[fast-furnace-1-2]",
     place_result = "fast-furnace",
@@ -154,9 +154,9 @@ data:extend(
       count = 100,
       ingredients =
       {
-        {"science-pack-1", 4},
-        {"science-pack-2", 2},
-        {"science-pack-3", 1},
+        {"automation-science-pack", 4},
+        {"logistic-science-pack", 2},
+        {"chemical-science-pack", 1},
         {"production-science-pack", 1}
       },
       time = 60

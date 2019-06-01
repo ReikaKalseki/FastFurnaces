@@ -24,7 +24,7 @@ data:extend(
     name = "fast-drill",
     icon = "__FastFurnaces__/graphics/icons/basic-mining-drill.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "production-machine",
     order = "f[electric-mining-drill]-f[fast-drill-1-2]",
     place_result = "fast-drill",
@@ -173,9 +173,9 @@ data:extend(
       count = 200,
       ingredients =
       {
-        {"science-pack-1", 4},
-        {"science-pack-2", 2},
-        {"science-pack-3", 1},
+        {"automation-science-pack", 4},
+        {"logistic-science-pack", 2},
+        {"chemical-science-pack", 1},
         {"production-science-pack", 1}
       },
       time = 60

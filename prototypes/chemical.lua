@@ -7,7 +7,7 @@ data:extend(
     name = "fast-chemical",
     icon = "__FastFurnaces__/graphics/icons/chemical-plant.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "production-machine",
     order = "f[chemical-plant]-f[fast-chemical-1-2]",
     place_result = "fast-chemical",
@@ -32,7 +32,7 @@ data:extend(
     icon = "__FastFurnaces__/graphics/icons/chemical-plant.png",
 	icon_size = 32,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "fast-chemical"},
+    minable = {mining_time = 0.5, result = "fast-chemical"},
     max_health = 500,
     fast_replaceable_group = "chemical",
     corpse = "big-remnants",
@@ -211,9 +211,9 @@ data:extend(
       count = 200,
       ingredients =
       {
-        {"science-pack-1", 4},
-        {"science-pack-2", 2},
-        {"science-pack-3", 1},
+        {"automation-science-pack", 4},
+        {"logistic-science-pack", 2},
+        {"chemical-science-pack", 1},
         {"production-science-pack", 1}
       },
       time = 60

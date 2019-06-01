@@ -7,7 +7,7 @@ data:extend(
     name = "fast-refinery",
     icon = "__FastFurnaces__/graphics/icons/oil-refinery.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "production-machine",
     order = "f[oil-refinery]-f[fast-refinery-1-2]",
     place_result = "fast-refinery",
@@ -188,10 +188,10 @@ data:extend(
       count = 100,
       ingredients =
       {
-        {"science-pack-1", 2},
-        {"science-pack-2", 2},
-        {"science-pack-3", 1},
-        {"high-tech-science-pack", 1},
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"utility-science-pack", 1},
         {"production-science-pack", 1}
       },
       time = 60

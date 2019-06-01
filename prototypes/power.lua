@@ -7,7 +7,7 @@ data:extend(
     name = "solar-panel-4",
     icon = "__base__/graphics/icons/solar-panel.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     --subgroup = "bob-energy-solar-panel",
     order = "d[solar-panel]-a[solar-panel-4-b]",
     place_result = "solar-panel-4",
@@ -18,7 +18,7 @@ data:extend(
     name = "solar-panel-5",
     icon = "__base__/graphics/icons/solar-panel.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     --subgroup = "bob-energy-solar-panel",
     order = "d[solar-panel]-a[solar-panel-5-b]",
     place_result = "solar-panel-5",
@@ -34,7 +34,7 @@ data:extend(
     name = "steam-engine-4",
     icon = "__base__/graphics/icons/steam-engine.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     --subgroup = "bob-energy-steam-engine",
     order = "b[steam-power]-b[steam-engine]-4",
     place_result = "steam-engine-4",
@@ -45,7 +45,7 @@ data:extend(
     name = "steam-engine-5",
     icon = "__base__/graphics/icons/steam-engine.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     --subgroup = "bob-energy-steam-engine",
     order = "b[steam-power]-b[steam-engine]-5",
     place_result = "steam-engine-5",
@@ -117,7 +117,7 @@ data:extend(
     name = "solar-panel-4",
     icon = "__base__/graphics/icons/solar-panel.png",
     flags = {"placeable-neutral", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "solar-panel-4"},
+    minable = {mining_time = 0.5, result = "solar-panel-4"},
     max_health = 250,
     corpse = "big-remnants",
     collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
@@ -142,7 +142,7 @@ data:extend(
     name = "solar-panel-5",
     icon = "__base__/graphics/icons/solar-panel.png",
     flags = {"placeable-neutral", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "solar-panel-5"},
+    minable = {mining_time = 0.5, result = "solar-panel-5"},
     max_health = 400,
     corpse = "big-remnants",
     collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
@@ -357,10 +357,10 @@ data:extend(
       count = 200,
       ingredients =
       {
-        {"science-pack-1", 1},
-        {"science-pack-2", 1},
-        {"science-pack-3", 1},
-        {"high-tech-science-pack", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"utility-science-pack", 1},
       },
       time = 30
     },
@@ -385,10 +385,10 @@ data:extend(
       count = 400,
       ingredients =
       {
-        {"science-pack-1", 1},
-        {"science-pack-2", 1},
-        {"science-pack-3", 1},
-        {"high-tech-science-pack", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"utility-science-pack", 1},
       },
       time = 30
     },
@@ -421,9 +421,9 @@ data:extend(
       count = 100,
       ingredients =
       {
-        {"science-pack-1", 1},
-        {"science-pack-2", 1},
-        {"science-pack-3", 1}
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1}
       },
       time = 30
     },
@@ -452,10 +452,10 @@ data:extend(
       count = 250,
       ingredients =
       {
-        {"science-pack-1", 1},
-        {"science-pack-2", 1},
-        {"science-pack-3", 1},
-        {"high-tech-science-pack", 1}
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"utility-science-pack", 1}
       },
       time = 30
     },
