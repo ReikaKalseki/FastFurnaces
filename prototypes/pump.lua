@@ -86,7 +86,7 @@ data:extend(
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions = 0.015 / 2.5
+      emissions_per_minute = 3.6
     },
     energy_usage = "150kW",
     pumping_speed = 800,
@@ -97,7 +97,7 @@ data:extend(
       {
         filename = "__FastFurnaces__/graphics/entity/small-pump/small-pump-up.png",
         width = 46,
-        height = 56,
+        height = 52,
         frame_count = 8,
         shift = {0.09375, 0.03125},
         animation_speed = 0.5

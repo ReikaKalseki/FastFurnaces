@@ -13,7 +13,7 @@ drill.energy_source =
     {
       type = "electric",
       -- will produce this much * energy pollution units per tick
-      emissions = 0.075 / 1.5,
+      emissions_per_minute = 7, --default is 10
       usage_priority = "secondary-input"
     },
 

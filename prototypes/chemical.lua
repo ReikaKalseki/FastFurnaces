@@ -145,7 +145,7 @@ data:extend(
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions = 0.05 / 3.5
+      emissions_per_minute = data.raw["assembling-machine"]["chemical-plant"].energy_source.emissions_per_minute*2.4
     },
     energy_usage = "400kW",
     ingredient_count = 4,

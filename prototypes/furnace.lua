@@ -61,7 +61,7 @@ data:extend(
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions = 0.0075
+      emissions_per_minute = data.raw["furnace"]["electric-furnace"].energy_source.emissions_per_minute*1.5
     },
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =
