@@ -44,7 +44,7 @@ data:extend(
     stack_size = 50,
     default_request_amount = 10,
     effect = { productivity = {bonus = 0.25}, consumption = {bonus = 1.2}, pollution = {bonus = 0.8}, speed = {bonus = -0.05}},
-    --limitation = productivitymodulelimitation(),
+    --limitation = productivity_module_limitation(),
     --limitation_message_key = "production-module-usable-only-on-intermediates"
   },
   
@@ -89,7 +89,7 @@ data:extend(
     stack_size = 50,
     default_request_amount = 10,
     effect = { productivity = {bonus = 0.5}, consumption = {bonus = 1.5}, pollution = {bonus = 1}, speed = {bonus = 0}},
-    --limitation = productivitymodulelimitation(),
+    --limitation = productivity_module_limitation(),
     --limitation_message_key = "production-module-usable-only-on-intermediates"
   }
 })
