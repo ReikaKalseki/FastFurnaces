@@ -51,7 +51,7 @@ data:extend(
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = data.raw["assembling-machine"]["refinery"].energy_source.emissions_per_minute*1.6
+      emissions_per_minute = data.raw["assembling-machine"]["oil-refinery"].energy_source.emissions_per_minute*1.6
     },
     energy_usage = "900kW",
     ingredient_count = 4,
