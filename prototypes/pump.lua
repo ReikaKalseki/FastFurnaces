@@ -145,6 +145,7 @@ data:extend(
     max_health = 200,
     fluid_box_tile_collision_test = { "ground-tile" },
     adjacent_tile_collision_test = { "water-tile" },
+	collision_mask = { "ground-tile", "object-layer" },
     corpse = "small-remnants",
     fluid = "water",
     resistances =
