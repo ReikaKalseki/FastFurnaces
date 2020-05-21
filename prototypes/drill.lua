@@ -3,6 +3,7 @@ if not Config.fastDrill then return end
 local drill = table.deepcopy(data.raw["mining-drill"]["electric-mining-drill"])
 drill.name = "fast-drill"
 drill.icon = "__FastFurnaces__/graphics/icons/basic-mining-drill.png"
+drill.icon_size = 32
 drill.minable = {mining_time = 1, result = "fast-drill"}
 drill.max_health = 500
 drill.mining_speed = 1
