@@ -1,154 +1,19 @@
+require "functions"
+
 if not Config.fastDrill then return end
 
-local drill = table.deepcopy(data.raw["mining-drill"]["electric-mining-drill"])
-drill.name = "fast-drill"
-drill.icon = "__FastFurnaces__/graphics/icons/basic-mining-drill.png"
-drill.minable = {mining_time = 1, result = "fast-drill"}
-drill.max_health = 500
-drill.mining_speed = 1
-drill.energy_usage = "80kW"
-drill.mining_power = 4
-drill.fast_replaceable_group = "mining-drill"
-drill.energy_source =
-    {
-      type = "electric",
-      -- will produce this much * energy pollution units per tick
-      emissions_per_minute = 7, --default is 10
-      usage_priority = "secondary-input"
-    },
+local drill = createFastVersion("mining-drill", "electric-mining-drill")
 
-data:extend(
-{
-  {
-    type = "item",
-    name = "fast-drill",
-    icon = "__FastFurnaces__/graphics/icons/basic-mining-drill.png",
-	icon_size = 32,
-    flags = {},
-    subgroup = "production-machine",
-    order = "f[electric-mining-drill]-f[fast-drill-1-2]",
-    place_result = "fast-drill",
-    stack_size = 50
-  },
+drill.entity.mining_speed = 1
+drill.entity.energy_usage = "80kW"
+drill.entity.mining_power = 4 --removed in mid 0.17
+drill.entity.energy_source.emissions_per_minute = 7
 
-  {
-    type = "recipe",
-    name = "fast-drill",
-    enabled = "false",
-	energy_required = 20,
-    ingredients =
-    {
-      {"electric-mining-drill", 1},
-      {"steel-plate", 25},
-      {"advanced-circuit", 10},
-    },
-    result = "fast-drill"
-  },
---[[
-  {
-    type = "mining-drill",
-    name = "fast-drill",
-    icon = "__FastFurnaces__/graphics/icons/basic-mining-drill.png",
-	icon_size = 32,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "fast-drill"},
-    max_health = 500,
-    resource_categories = {"basic-solid"},
-    corpse = "big-remnants",
-    collision_box = {{ -1.4, -1.4}, {1.4, 1.4}},
-    selection_box = {{ -1.5, -1.5}, {1.5, 1.5}},
-    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-    working_sound =
-    {
-      sound =
-      {
-        filename = "__base__/sound/electric-mining-drill.ogg",
-        volume = 0.75
-      },
-      apparent_volume = 1.5,
-    },
-    animations =
-    {
-      north =
-      {
-        priority = "extra-high",
-        width = 110,
-        height = 114,
-        line_length = 8,
-        shift = {0.2, -0.2},
-        filename = "__FastFurnaces__/graphics/entity/basic-mining-drill/north.png",
-        frame_count = 64,
-        animation_speed = 0.5,
-        run_mode = "forward-then-backward",
-      },
-      east =
-      {
-        priority = "extra-high",
-        width = 129,
-        height = 100,
-        line_length = 8,
-        shift = {0.45, 0},
-        filename = "__FastFurnaces__/graphics/entity/basic-mining-drill/east.png",
-        frame_count = 64,
-        animation_speed = 0.5,
-        run_mode = "forward-then-backward",
-      },
-      south =
-      {
-        priority = "extra-high",
-        width = 109,
-        height = 111,
-        line_length = 8,
-        shift = {0.15, 0},
-        filename = "__FastFurnaces__/graphics/entity/basic-mining-drill/south.png",
-        frame_count = 64,
-        animation_speed = 0.5,
-        run_mode = "forward-then-backward",
-      },
-      west =
-      {
-        priority = "extra-high",
-        width = 128,
-        height = 100,
-        line_length = 8,
-        shift = {0.25, 0},
-        filename = "__FastFurnaces__/graphics/entity/basic-mining-drill/west.png",
-        frame_count = 64,
-        animation_speed = 0.5,
-        run_mode = "forward-then-backward",
-      }
-    },
-    mining_speed = 1,
-    energy_source =
-    {
-      type = "electric",
-      -- will produce this much * energy pollution units per tick
-      emissions = 0.075 / 1.5,
-      usage_priority = "secondary-input"
-    },
-    energy_usage = "80kW",
-    mining_power = 4,
-    resource_searching_radius = 2.49,
-    vector_to_place_result = {0, -1.85},
-    module_specification =
-    {
-      module_slots = 3
-    },
-    radius_visualisation_picture =
-    {
-      filename = "__FastFurnaces__/graphics/entity/basic-mining-drill/mining-drill-radius-visualization.png",
-      width = 12,
-      height = 12
-    },
-    fast_replaceable_group = "mining-drill"
-  },--]]
-  
-  drill,
-  
-  
-}
-)
+registerObjectArray(drill)
 
+data:extend({
+	createUpgradeRecipe("electric-mining-drill", 20, {{"steel-plate", 25}, {"advanced-circuit", 10}}, true)
+})
 
 data:extend(
 {
@@ -160,7 +25,7 @@ data:extend(
     {
       {
         type = "unlock-recipe",
-        recipe = "fast-drill"
+        recipe = drill.name
       },
     },
     prerequisites =
