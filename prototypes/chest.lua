@@ -11,6 +11,7 @@ local function createChest(name)
 	chest.name = "big-" .. string.sub(name, string.len("logistic-chest-")+1) .. "-chest"
 	--log("Creating big version of " .. name .. " with name " .. chest.name)
 	chest.icon = "__FastFurnaces__/graphics/icons/" .. chest.name .. ".png"
+	chest.icon_size = 32
 	chest.minable.result = chest.name
 	chest.max_health = chest.max_health*1.2
 	chest.inventory_size = 144

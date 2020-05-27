@@ -27,6 +27,8 @@ function createFastVersion(category, name, suffix)
 		suffixSpritesDynamic(entity, suffix)
 		suffixSpritesDynamic(item, suffix)
 	end
+	entity.icon_size = 32
+	item.icon_size = 32
 	log("Creating upgrade variant '" .. item.name .. "' from '[" .. category .. "][" .. name .. "]'")
 	return {name = item.name, entity=entity, item=item}
 end

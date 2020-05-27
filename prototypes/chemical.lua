@@ -10,7 +10,7 @@ chem.entity.crafting_speed = 3
 chem.entity.energy_source.emissions_per_minute = data.raw["assembling-machine"]["chemical-plant"].energy_source.emissions_per_minute*2.4
 chem.entity.energy_usage = "400kW"
 
-registerObjectArray(refin)
+registerObjectArray(chem)
 
 data:extend({
 	createUpgradeRecipe("chemical-plant", 30, {}, true)
