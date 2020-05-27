@@ -5,7 +5,7 @@ data:extend(
     name = "fast-furnace",
     order = "aaa-a",
     inventory_order = "c-a",
-    icon = "__FastFurnaces__/graphics/icons/furnace.png",
+    icon = "__FastFurnaces__/graphics/icons/electric-furnace.png",
 	icon_size = 32,
   },
   {
