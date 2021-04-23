@@ -18,6 +18,7 @@ tier2.entity.supply_area_distance = 9
 tier2.entity.energy_usage = "4000kW"
 tier2.entity.distribution_effectivity = 1
 tier2.entity.module_specification = {module_slots = 12, module_info_icon_shift = {0, 0.5}, module_info_multi_row_initial_height_modifier = -0.3}
+tier2.entity.next_upgrade = tier1.entity.name
 
 registerObjectArray(tier1)
 registerObjectArray(tier2)

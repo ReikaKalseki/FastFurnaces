@@ -2,8 +2,15 @@ require "__DragonIndustries__.cloning"
 require "__DragonIndustries__.registration"
 require "__DragonIndustries__.strings"
 
-function getFastName(name)
-	return "reika-fast-" .. name
+function getFastName(name, suffix)
+	local ret = "reika-fast-" .. name
+	if string.find(name, "reika-fast", 1, true) then
+		ret = name
+	end
+	if suffix then
+		ret = ret .. suffix
+	end
+	return ret
 end
 
 function getUpgradeRecipe(basename)
@@ -29,7 +36,28 @@ function createFastVersion(category, name, suffix)
 	end
 	entity.icon_size = 32
 	item.icon_size = 32
+	entity.icon_mipmaps = 0
+	item.icon_mipmaps = 0
+	if item.icons then
+		for _,ico in pairs(item.icons) do
+			ico.icon_size = 32
+			ico.icon_mipmaps = 0
+		end
+	end
+	if mods["Iconography"] then
+		item.icon = literalReplace(item.icon, "Iconography", "FastFurnaces")
+		item.icon = literalReplace(item.icon, "/0.18/", "/")
+		item.icon = literalReplace(item.icon, "/0.17/", "/")
+		item.icon = literalReplace(item.icon, "/0.16/", "/")
+		item.icon = literalReplace(item.icon, "/0.15/", "/")
+	end
+	entity.icon = item.icon
+	entity.icon_size = item.icon_size
+	entity.icons = item.icons
+	
 	log("Creating upgrade variant '" .. item.name .. "' from '[" .. category .. "][" .. name .. "]'")
+	--log(serpent.block(entity))
+	--log(serpent.block(item))
 	return {name = item.name, entity=entity, item=item}
 end
 

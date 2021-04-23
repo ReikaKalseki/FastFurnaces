@@ -1,5 +1,7 @@
 require "functions"
 
+require "__DragonIndustries__.strings"
+
 if not Config.fastDrill then return end
 
 local drill = createFastVersion("mining-drill", "electric-mining-drill")
@@ -7,7 +9,7 @@ local drill = createFastVersion("mining-drill", "electric-mining-drill")
 drill.entity.mining_speed = 1
 drill.entity.energy_usage = "80kW"
 drill.entity.mining_power = 4 --removed in mid 0.17
-drill.entity.energy_source.emissions_per_minute = 7
+drill.entity.energy_source.emissions_per_minute = 6
 
 registerObjectArray(drill)
 

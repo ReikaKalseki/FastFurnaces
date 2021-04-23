@@ -5,7 +5,7 @@
   "author": "Reika",
   "contact": "",
   "homepage": "",
-  "factorio_version" : "0.18",
+  "factorio_version" : "1.1",
   "description": "Adds faster electric furnaces and other production machines, and some other production enhancers like better drills, pumps and modules.",
-  "dependencies": ["base", "DragonIndustries"]
+  "dependencies": ["base", "DragonIndustries", "? bobpower", "? bobmining"]
 }
