@@ -1,0 +1,98 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.105.1
+Date: Apr 28 2021
+	- Update to 1.1
+---------------------------------------------------------------------------------------------------
+Version: 1.18.12
+Date: Jul 5 2020
+	- Added mod compat with Iconography
+---------------------------------------------------------------------------------------------------
+Version: 1.18.10
+Date: Jun 29 2020
+	- Added support for native upgrade system
+	- Improved fast replace groups
+---------------------------------------------------------------------------------------------------
+Version: 1.18.2
+Date: Jun 7 2020
+	- Slightly reduced drill emissions
+---------------------------------------------------------------------------------------------------
+Version: 1.18.1
+Date: May 29 2020
+	- Update to 0.18
+	- Fixed fast offshore pump placement errors again
+	- Moved shared code to Dragon Industries
+	- Improved construction of all entities to better inherit vanilla changes
+	- Updated graphics to 0.18
+---------------------------------------------------------------------------------------------------
+Version: 1.17.24
+Date: Sep 30 2019
+	- Added bob diamonds to better drill
+	- Fixed reference to refineries
+---------------------------------------------------------------------------------------------------
+Version: 1.17.12
+Date: Jun 17 2019
+	- More 0.17 fixes
+---------------------------------------------------------------------------------------------------
+Version: 1.17.6
+Date: Jun 6 2019
+	- Update to 0.17
+	- Fixed fast offshore pump placement errors
+---------------------------------------------------------------------------------------------------
+Version: 1.0.64
+Date: Jan 4 2018
+	- Added "productivity" to allowed beacon effects
+	- Redesigned free use and module config interaction again, to fix more crashes
+---------------------------------------------------------------------------------------------------
+Version: 1.0.60
+Date: Dec 23 2017
+	- Update to 0.16
+	- Improved "big chest" technology to grant more kinds of logi chests
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: Aug 8 2017
+	- Updated drill icon to match 0.15 style
+	- Renamed drill from "Accelerated" to "Improved"
+	- Reimplemented drill to better inherit from vanilla changes since 0.12
+---------------------------------------------------------------------------------------------------
+Version: 0.0.15
+Date: Jul 22 2017
+	- Fixed more optional require statements
+	- Added locale
+---------------------------------------------------------------------------------------------------
+Version: 0.0.12
+Date: Jul 16 2017
+	- Added fast long inserter
+	- Fixed CRC failure caused by optional "require" statements for the entity configs breaking MP compatibility
+	- Fixed crash with modules disabled but their free use enabled causing an attempted nil reference
+	- Changed default value of free use modules to false
+---------------------------------------------------------------------------------------------------
+Version: 0.0.10
+Date: Jul 14 2017
+	- Release
+	- Reduced drill power cost
+	- Made T4 and T5 modules more expensive
+	- Massively improved fast pump
+---------------------------------------------------------------------------------------------------
+Version: 0.0.8
+Date: Jul 2 2017
+	- Integrated options into the vanilla settings system
+---------------------------------------------------------------------------------------------------
+Version: 0.0.6
+Date: Jun 20 2017
+	- Update to 0.15
+	- Enabled T4 and T5 modules by default
+	- Added missing option for T2 drill
+	- Fixed crash with T4 and T5 steam engines if Bob's not installed
+	- Rebalanced tech costs and recipes
+---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Game: 0.14
+Date: Oct 28 2016
+	- Update to 0.14
+	- Added separate configs to enable or disable each class of entity
+---------------------------------------------------------------------------------------------------
+Version: 0.0.0
+Game: 0.12
+Date: Nov 24 2015
+	- Creation
+---------------------------------------------------------------------------------------------------
