@@ -55,11 +55,13 @@ Date: Aug 8 2017
 	- Reimplemented drill to better inherit from vanilla changes since 0.12
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.15
+Game: 0.15
 Date: Jul 22 2017
 	- Fixed more optional require statements
 	- Added locale
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.12
+Game: 0.15
 Date: Jul 16 2017
 	- Added fast long inserter
 	- Fixed CRC failure caused by optional "require" statements for the entity configs breaking MP compatibility
@@ -67,6 +69,7 @@ Date: Jul 16 2017
 	- Changed default value of free use modules to false
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.10
+Game: 0.15
 Date: Jul 14 2017
 	- Release
 	- Reduced drill power cost
@@ -74,10 +77,12 @@ Date: Jul 14 2017
 	- Massively improved fast pump
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.8
+Game: 0.15
 Date: Jul 2 2017
 	- Integrated options into the vanilla settings system
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.6
+Game: 0.15
 Date: Jun 20 2017
 	- Update to 0.15
 	- Enabled T4 and T5 modules by default
