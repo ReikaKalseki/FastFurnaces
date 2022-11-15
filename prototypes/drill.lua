@@ -4,7 +4,7 @@ require "__DragonIndustries__.strings"
 
 if not Config.fastDrill then return end
 
-local drill = createFastVersion("mining-drill", "electric-mining-drill")
+local drill = createFastVersion("mining-drill", "electric-mining-drill", nil, true)
 
 drill.entity.mining_speed = 1
 drill.entity.energy_usage = "80kW"
